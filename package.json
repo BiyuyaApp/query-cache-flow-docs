@@ -1,0 +1,20 @@
+{
+  "name": "cache-flow-docs",
+  "version": "1.0.0",
+  "description": "Documentation for CACHE-FLOW - Zero-Thought Cache Management for TanStack Query",
+  "private": true,
+  "scripts": {
+    "install:docs": "cd docs && npm install",
+    "dev:docs": "cd docs && npm start",
+    "build:docs": "cd docs && npm run build",
+    "build": "npm run build:docs && node scripts/build.js",
+    "preview": "npx serve dist"
+  },
+  "keywords": [
+    "cache-flow",
+    "tanstack-query",
+    "react-query",
+    "documentation"
+  ],
+  "license": "MIT"
+}

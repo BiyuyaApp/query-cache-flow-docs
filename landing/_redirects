@@ -1,0 +1,6 @@
+# Redirect /docs to /docs/intro
+/docs   /docs/intro   301
+
+# Handle trailing slashes (Docusaurus uses trailingSlash: false)
+/docs/intro/   /docs/intro   301
+/docs/getting-started/installation/   /docs/getting-started/installation   301
