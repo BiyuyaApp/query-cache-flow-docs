@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
 title: KUBB Integration
-description: Complete guide to integrating CACHE-FLOW with KUBB code generation
+description: Complete guide to integrating Query Cache Flow with KUBB code generation
 ---
 
 # KUBB Integration
 
-KUBB generates type-safe React Query hooks from your OpenAPI specification. CACHE-FLOW wraps these generated hooks with proper cache key management.
+KUBB generates type-safe React Query hooks from your OpenAPI specification. Query Cache Flow wraps these generated hooks with proper cache key management.
 
 ## What is KUBB?
 
@@ -19,12 +19,12 @@ KUBB generates type-safe React Query hooks from your OpenAPI specification. CACH
 ## The Integration Flow
 
 ```
-OpenAPI Spec → KUBB → Generated Hooks → CACHE-FLOW Wrappers → Your Components
+OpenAPI Spec → KUBB → Generated Hooks → Query Cache Flow Wrappers → Your Components
 ```
 
 1. **OpenAPI Spec**: Your backend's API definition (`openapi.json`)
 2. **KUBB**: Generates hooks like `useGetAccounts`, `useCreateAccount`
-3. **CACHE-FLOW**: Wraps with proper cache keys and invalidation
+3. **Query Cache Flow**: Wraps with proper cache keys and invalidation
 4. **Components**: Use the wrapped hooks with zero cache management
 
 ## KUBB Configuration
@@ -213,7 +213,7 @@ export const useAccountUpdate = ({ accountId, onSuccess, ...rest }: UseAccountUp
 
 ## Project Structure
 
-Organize your features with CACHE-FLOW:
+Organize your features with Query Cache Flow:
 
 ```
 src/
@@ -432,11 +432,11 @@ Ensure wrapper hooks call `invalidateQueriesForKeys` in `onSuccess`.
 
 ## Summary
 
-KUBB + CACHE-FLOW provides:
+KUBB + Query Cache Flow provides:
 
 1. **Type safety** from OpenAPI to components
 2. **Zero manual hook writing** for API calls
 3. **Automatic cache management** via wrappers
 4. **Consistent patterns** across all features
 
-The two-layer approach (KUBB generates, CACHE-FLOW wraps) keeps your code DRY while maintaining full cache control.
+The two-layer approach (KUBB generates, Query Cache Flow wraps) keeps your code DRY while maintaining full cache control.

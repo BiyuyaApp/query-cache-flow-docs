@@ -278,7 +278,7 @@ Put the entity map in a single file that imports all query groups:
 ```
 src/
   queries/
-    index.ts          # Core CACHE-FLOW utilities
+    index.ts          # Core Query Cache Flow utilities
     entityMap.ts      # Entity mapping (imports from features)
 ```
 

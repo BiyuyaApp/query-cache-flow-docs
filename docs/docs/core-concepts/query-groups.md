@@ -1,6 +1,6 @@
 # Query Groups
 
-Query groups organize related cache keys, invalidation rules, and normalization functions for a single entity. They are the building blocks of CACHE-FLOW's automatic cache management.
+Query groups organize related cache keys, invalidation rules, and normalization functions for a single entity. They are the building blocks of Query Cache Flow's automatic cache management.
 
 ## The QueryGroup Interface
 

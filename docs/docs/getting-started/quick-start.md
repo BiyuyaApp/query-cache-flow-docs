@@ -1,6 +1,6 @@
 # Quick Start
 
-This guide will walk you through creating your first CACHE-FLOW query group and using it in a React component.
+This guide will walk you through creating your first Query Cache Flow query group and using it in a React component.
 
 ## Step 1: Define Your Entity Query Group
 
@@ -28,7 +28,7 @@ accountsQueryGroup.remove    // (id) => { entity: 'accounts', method: 'remove', 
 
 ## Step 2: Wrap KUBB-Generated Hooks
 
-If you're using KUBB to generate hooks from your OpenAPI spec, wrap them with CACHE-FLOW:
+If you're using KUBB to generate hooks from your OpenAPI spec, wrap them with Query Cache Flow:
 
 ```typescript
 // src/features/accounts/queries/hooks.ts
@@ -167,7 +167,7 @@ function AccountsManager() {
 
 ## What Just Happened?
 
-With CACHE-FLOW, you get:
+With Query Cache Flow, you get:
 
 1. **Consistent cache keys** - All queries use the same structured format
 2. **Automatic invalidation** - Mutations invalidate related queries automatically

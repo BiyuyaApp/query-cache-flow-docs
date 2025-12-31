@@ -1,12 +1,12 @@
 ---
 sidebar_position: 4
 title: Pagination
-description: Handle paginated queries with query parameters in CACHE-FLOW cache keys
+description: Handle paginated queries with query parameters in Query Cache Flow cache keys
 ---
 
 # Pagination
 
-CACHE-FLOW supports paginated queries by including query parameters in cache keys. This ensures each page of data has its own cache entry.
+Query Cache Flow supports paginated queries by including query parameters in cache keys. This ensures each page of data has its own cache entry.
 
 ## The Problem
 
@@ -329,4 +329,4 @@ function normalizeParams(params: QueryParams): QueryParams {
 | Filter-based | Search, filtering, sorting |
 | Combined | Complex data grids with all features |
 
-CACHE-FLOW's query parameter support makes all pagination patterns work seamlessly with automatic cache management.
+Query Cache Flow's query parameter support makes all pagination patterns work seamlessly with automatic cache management.

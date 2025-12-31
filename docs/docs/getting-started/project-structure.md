@@ -1,6 +1,6 @@
 # Project Structure
 
-This guide shows you how to organize CACHE-FLOW in your React application for maximum maintainability and scalability.
+This guide shows you how to organize Query Cache Flow in your React application for maximum maintainability and scalability.
 
 ## Recommended Structure
 
@@ -8,7 +8,7 @@ This guide shows you how to organize CACHE-FLOW in your React application for ma
 src/
 ├── queries/
 │   ├── client.ts           # QueryClient configuration
-│   └── index.ts            # CACHE-FLOW implementation
+│   └── index.ts            # Query Cache Flow implementation
 ├── features/
 │   ├── accounts/
 │   │   ├── queries/
@@ -52,9 +52,9 @@ const queryClient = new QueryClient({
 export default queryClient;
 ```
 
-### 2. CACHE-FLOW Implementation (`src/queries/index.ts`)
+### 2. Query Cache Flow Implementation (`src/queries/index.ts`)
 
-This file contains the complete CACHE-FLOW implementation (see [Installation](installation) for the full code).
+This file contains the complete Query Cache Flow implementation (see [Installation](installation) for the full code).
 
 ## Feature-Based Organization
 
@@ -156,7 +156,7 @@ src/
 └── openapi.json           # OpenAPI specification
 ```
 
-Your wrapper hooks import from `generated/hooks` and add CACHE-FLOW cache keys:
+Your wrapper hooks import from `generated/hooks` and add Query Cache Flow cache keys:
 
 ```typescript
 import { useGetAccounts } from 'src/generated/hooks';
@@ -233,7 +233,7 @@ export const useCreateAccount = ...
 src/
 ├── generated/        # KUBB output (git-ignored, regenerated)
 ├── features/         # Your custom code
-└── queries/          # CACHE-FLOW infrastructure
+└── queries/          # Query Cache Flow infrastructure
 ```
 
 ## Example: Complete Feature Structure

@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
 title: Axios Interceptors
-description: Configure axios interceptors for authentication and error handling with CACHE-FLOW
+description: Configure axios interceptors for authentication and error handling with Query Cache Flow
 ---
 
 # Axios Interceptors
 
-Axios interceptors handle cross-cutting concerns like authentication, error handling, and request/response transformation. This guide shows how to integrate them with CACHE-FLOW.
+Axios interceptors handle cross-cutting concerns like authentication, error handling, and request/response transformation. This guide shows how to integrate them with Query Cache Flow.
 
 ## Basic Setup
 
@@ -208,7 +208,7 @@ axiosInstance.interceptors.response.use(
 );
 ```
 
-## Integration with CACHE-FLOW
+## Integration with Query Cache Flow
 
 ### Cache Invalidation on Auth Changes
 
@@ -398,7 +398,7 @@ Don't swallow errors - always `throw` after handling.
 
 ### 3. Avoid Circular Dependencies
 
-If interceptors need CACHE-FLOW functions, use dynamic imports or dependency injection.
+If interceptors need Query Cache Flow functions, use dynamic imports or dependency injection.
 
 ### 4. Test Interceptors
 
@@ -416,7 +416,7 @@ describe('axios interceptors', () => {
 
 ## Summary
 
-Axios interceptors complement CACHE-FLOW by handling:
+Axios interceptors complement Query Cache Flow by handling:
 
 - **Authentication** - Token injection and refresh
 - **Error handling** - Global error responses

@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Optimistic Updates
-description: Implement instant UI feedback with optimistic updates using CACHE-FLOW's normalize functions
+description: Implement instant UI feedback with optimistic updates using Query Cache Flow's normalize functions
 ---
 
 # Optimistic Updates
 
-Optimistic updates provide instant UI feedback by updating the cache before the server responds. CACHE-FLOW's `normalize` functions make this pattern straightforward and consistent.
+Optimistic updates provide instant UI feedback by updating the cache before the server responds. Query Cache Flow's `normalize` functions make this pattern straightforward and consistent.
 
 ## Why Optimistic Updates?
 
@@ -303,4 +303,4 @@ export const useMessageSend = ({ threadId, onSuccess, onError }) =>
 | `onMutate` + rollback | Need instant feedback, complex state | Medium |
 | Full optimistic | Chat, real-time apps, offline support | High |
 
-CACHE-FLOW's built-in normalize functions handle most common cases. For complex scenarios, combine them with TanStack Query's full mutation lifecycle.
+Query Cache Flow's built-in normalize functions handle most common cases. For complex scenarios, combine them with TanStack Query's full mutation lifecycle.

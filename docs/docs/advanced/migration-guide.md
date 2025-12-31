@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Migration Guide
-description: Migrate from manual query keys to CACHE-FLOW
+description: Migrate from manual query keys to Query Cache Flow
 ---
 
 # Migration Guide
 
-This guide walks you through migrating an existing TanStack Query codebase to CACHE-FLOW.
+This guide walks you through migrating an existing TanStack Query codebase to Query Cache Flow.
 
 ## Before You Start
 
@@ -24,11 +24,11 @@ This guide walks you through migrating an existing TanStack Query codebase to CA
    queryClient.invalidateQueries({ queryKey: ['accounts'] })
    ```
 
-3. **Are you using KUBB?** If not, CACHE-FLOW still helps, but you'll write hooks manually.
+3. **Are you using KUBB?** If not, Query Cache Flow still helps, but you'll write hooks manually.
 
 ## Migration Steps
 
-### Phase 1: Add CACHE-FLOW Core
+### Phase 1: Add Query Cache Flow Core
 
 #### Step 1: Create the Core File
 
@@ -228,7 +228,7 @@ export const useCreateAccount = () =>
   });
 ```
 
-#### After: CACHE-FLOW
+#### After: Query Cache Flow
 
 ```typescript
 // New: src/features/accounts/queries/index.ts
@@ -363,7 +363,7 @@ export const remindersQueryGroup = {
 
 After migration, verify:
 
-- [ ] All queries use CACHE-FLOW keys
+- [ ] All queries use Query Cache Flow keys
 - [ ] All mutations invalidate properly
 - [ ] No raw `queryKey: ['...']` patterns remain
 - [ ] TypeScript compiles without errors
@@ -412,9 +412,9 @@ If issues arise:
 
 ## Summary
 
-Migration to CACHE-FLOW involves:
+Migration to Query Cache Flow involves:
 
-1. Adding core CACHE-FLOW utilities
+1. Adding core Query Cache Flow utilities
 2. Creating query groups for each feature
 3. Wrapping existing hooks
 4. Updating imports

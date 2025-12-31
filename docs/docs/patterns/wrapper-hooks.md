@@ -1,6 +1,6 @@
 # Wrapper Hooks Pattern
 
-The wrapper hooks pattern is the bridge between KUBB-generated hooks and CACHE-FLOW's query key management system. It enables type-safe, automatically invalidating queries with zero cognitive overhead.
+The wrapper hooks pattern is the bridge between KUBB-generated hooks and Query Cache Flow's query key management system. It enables type-safe, automatically invalidating queries with zero cognitive overhead.
 
 ## The Problem
 
@@ -13,7 +13,7 @@ KUBB generates React Query hooks from your OpenAPI spec, but these generated hoo
 
 ## The Solution
 
-Wrap KUBB-generated hooks with thin wrappers that inject CACHE-FLOW query keys and invalidation logic:
+Wrap KUBB-generated hooks with thin wrappers that inject Query Cache Flow query keys and invalidation logic:
 
 ```typescript
 // KUBB generates this (don't modify)
@@ -549,13 +549,13 @@ export const useAccountCreate = ({ onSuccess, ...rest }) =>
 
 The wrapper hooks pattern:
 
-- **Bridges** KUBB-generated hooks with CACHE-FLOW query keys
+- **Bridges** KUBB-generated hooks with Query Cache Flow query keys
 - **Enables** automatic invalidation and optimistic updates
 - **Maintains** type safety from OpenAPI spec
 - **Reduces** boilerplate in components
 - **Centralizes** cache management logic
 
-Every KUBB-generated hook should have a corresponding wrapper that injects the proper CACHE-FLOW query key.
+Every KUBB-generated hook should have a corresponding wrapper that injects the proper Query Cache Flow query key.
 
 ## See Also
 

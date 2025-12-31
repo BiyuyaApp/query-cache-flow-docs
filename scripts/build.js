@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Build script for CACHE-FLOW documentation site
+ * Build script for Query Cache Flow documentation site
  *
  * Combines:
  * - Landing page (landing/) → dist/
@@ -43,7 +43,7 @@ function rmDir(dir) {
   }
 }
 
-console.log('Building CACHE-FLOW documentation site...\n');
+console.log('Building Query Cache Flow documentation site...\n');
 
 // 1. Clean dist folder
 console.log('1. Cleaning dist folder...');

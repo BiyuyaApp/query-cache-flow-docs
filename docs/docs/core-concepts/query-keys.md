@@ -1,10 +1,10 @@
 # Query Keys
 
-Query keys are the foundation of CACHE-FLOW. They provide a consistent, structured approach to identifying cached data in TanStack Query.
+Query keys are the foundation of Query Cache Flow. They provide a consistent, structured approach to identifying cached data in TanStack Query.
 
 ## The QueryKey Type
 
-In CACHE-FLOW, all cache keys follow a single structured format:
+In Query Cache Flow, all cache keys follow a single structured format:
 
 ```typescript
 export type QueryKey<T> = {
@@ -127,7 +127,7 @@ You can extend query keys with additional fields for filtering or context:
 TanStack Query wraps your structured key in an array:
 
 ```typescript
-// Your CACHE-FLOW key
+// Your Query Cache Flow key
 const queryKey = { entity: 'accounts', method: 'list' };
 
 // How it's used in TanStack Query
@@ -141,7 +141,7 @@ useQuery({
 
 ## Key Hierarchy
 
-CACHE-FLOW keys form a natural hierarchy for invalidation:
+Query Cache Flow keys form a natural hierarchy for invalidation:
 
 ```
 { entity: 'accounts' }                           // All account queries

@@ -1,7 +1,7 @@
 {
-  "name": "cache-flow-docs",
+  "name": "query-cache-flow-docs",
   "version": "1.0.0",
-  "description": "Documentation for CACHE-FLOW - Zero-Thought Cache Management for TanStack Query",
+  "description": "Documentation for Query Cache Flow - Zero-Thought Cache Management for TanStack Query",
   "private": true,
   "scripts": {
     "install:docs": "cd docs && npm install",
@@ -11,7 +11,7 @@
     "preview": "npx serve dist"
   },
   "keywords": [
-    "cache-flow",
+    "query-cache-flow",
     "tanstack-query",
     "react-query",
     "documentation"

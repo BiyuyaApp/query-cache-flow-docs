@@ -7,7 +7,7 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CACHE-FLOW',
+  title: 'Query Cache Flow',
   tagline: 'Zero-Thought Cache Management for TanStack Query',
   favicon: 'img/favicon.svg',
 
@@ -53,9 +53,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'CACHE-FLOW',
+        title: 'Query Cache Flow',
         logo: {
-          alt: 'CACHE-FLOW Logo',
+          alt: 'Query Cache Flow Logo',
           src: 'img/logo.svg',
           href: '/docs/intro',
         },
@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `CACHE-FLOW is an open pattern for TanStack Query cache management. Built with Docusaurus.`,
+        copyright: `Query Cache Flow is an open pattern for TanStack Query cache management. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

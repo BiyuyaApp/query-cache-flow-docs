@@ -1,6 +1,6 @@
 # CRUD Factory
 
-The `createQueryGroupCRUD` function is the heart of CACHE-FLOW. It generates a complete set of query keys, invalidation rules, and normalization functions for an entity in a single line of code.
+The `createQueryGroupCRUD` function is the heart of Query Cache Flow. It generates a complete set of query keys, invalidation rules, and normalization functions for an entity in a single line of code.
 
 ## Function Signature
 

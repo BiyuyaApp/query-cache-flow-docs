@@ -1,10 +1,10 @@
 # Installation
 
-CACHE-FLOW is a pattern, not a package. Instead of installing via npm, you copy the implementation into your project and customize it to your needs.
+Query Cache Flow is a pattern, not a package. Instead of installing via npm, you copy the implementation into your project and customize it to your needs.
 
 ## Prerequisites
 
-Before implementing CACHE-FLOW, ensure your project has:
+Before implementing Query Cache Flow, ensure your project has:
 
 - **TanStack Query** v5.x (`@tanstack/react-query`)
 - **TypeScript** (recommended, but not required)
@@ -44,9 +44,9 @@ const queryClient = new QueryClient({
 export default queryClient;
 ```
 
-## Step 3: Copy the CACHE-FLOW Implementation
+## Step 3: Copy the Query Cache Flow Implementation
 
-Create `src/queries/index.ts` with the complete CACHE-FLOW implementation:
+Create `src/queries/index.ts` with the complete Query Cache Flow implementation:
 
 ```typescript
 import { InvalidateQueryFilters } from '@tanstack/react-query';
@@ -246,7 +246,7 @@ console.log(testQueryGroup.list.queryKey);
 // Output: { entity: 'test', method: 'list' }
 ```
 
-If you see the correct output, CACHE-FLOW is ready to use!
+If you see the correct output, Query Cache Flow is ready to use!
 
 ## Next Steps
 

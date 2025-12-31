@@ -1,6 +1,6 @@
-# CACHE-FLOW Documentation
+# Query Cache Flow Documentation
 
-Documentation site for CACHE-FLOW - Zero-Thought Cache Management for TanStack Query.
+Documentation site for Query Cache Flow - Zero-Thought Cache Management for TanStack Query.
 
 ## Quick Start
 
@@ -170,7 +170,7 @@ cache-flow-docs/
 The loop will output the following promise when complete:
 
 ```
-<promise>CACHE-FLOW-DOCS-COMPLETE</promise>
+<promise>Query Cache Flow-DOCS-COMPLETE</promise>
 ```
 
 ### Manual Verification Steps
@@ -242,7 +242,7 @@ To improve the documentation template:
 
 ## Source Code
 
-The actual CACHE-FLOW implementation this documents:
+The actual Query Cache Flow implementation this documents:
 - **Repository**: `~/Documents/projects/biyuya-workspace/`
 - **Core file**: `biyuya-frontend/src/queries/index.ts`
 - **KUBB config**: `biyuya-frontend/kubb.config.ts`
